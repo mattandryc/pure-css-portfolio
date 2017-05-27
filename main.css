@@ -1,0 +1,122 @@
+/* Smartphones (portrait) ----------- */
+
+
+h1, h2, h3, p, a, .Notification {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+    color: whitesmoke;
+    margin: .5rem;
+}
+
+.Notification {
+    color: #222;
+    visibility: visible;
+    font-size: 4rem;
+}
+
+a {
+    -webkit-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+    background-color: transparent;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+body {
+    visibility: hidden;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+    text-decoration: none;
+    padding: .8rem;
+}
+
+layer {
+    background-color: rgba(123, 31, 162, 0.4);
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    width: 100vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+section:nth-of-type(1) {
+    background-image: url("http://ignition.eg2.fr/wp-content/uploads/2016/01/side_view_gare.jpg");
+}
+
+section:nth-of-type(2) {
+    background-color: #7b1fa2;
+
+}
+
+section:nth-of-type(3) {
+    background-image: url("https://source.unsplash.com/ZQeRH1XD4Tc/1024x683");
+
+}
+
+section:nth-of-type(4) {
+    background-color: #7b1fa2;
+}
+
+.Header-content {
+    margin-top: 2rem;
+}
+
+@media (max-width: 414px) {
+    body {
+        visibility: visible;
+    }
+
+    .Notification {
+        visibility: hidden;
+        font-size: 0;
+    }
+
+}
