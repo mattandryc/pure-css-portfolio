@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -93,10 +93,6 @@ section:nth-of-type(4) {
 section:nth-of-type(odd) {
     background-color: #7b1fa2;
 
-}
-
-.Header-content {
-    margin-top: 2rem;
 }
 
 .Notification {
