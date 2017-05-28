@@ -1,6 +1,6 @@
 /* Smartphones (portrait) ----------- */
 
-h1, h2, h3, p, a, span.Notification {
+h1, h2, h3, p, a, .Notification {
     font-family: 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
     color: whitesmoke;
     margin: .5rem;
@@ -99,10 +99,11 @@ section:nth-of-type(odd) {
     margin-top: 2rem;
 }
 
-span.Notification {
+.Notification {
     color: #222;
     font-size: 4rem;
-    visibility: hidden;
+    visibility: visible;
+    margin-top: 10rem;
 }
 
 p.Caption  {
@@ -122,35 +123,15 @@ p.Caption a:hover  {
     margin-top: 3rem;
 }
 
-.path-1 {
-    stroke-dashoffset: 745;
-    transition: 5s linear;
-}
-
-.path-2 {
-    stroke-dasharray: 260 1000;
-    stroke-dashoffset: 261;
-    transition: 1.2s linear 5.2s;
-}
-
-.path-3 {
-    stroke-dasharray: 100 1000;
-    stroke-dashoffset: 101;
-    transition: 1s linear 6.5s;
-}
-
-.path-4 {
-    stroke-width: 0;
-    transition: 0.1s linear 7.5s;
-}
 
 @media (max-width: 414px) {
     body {
         visibility: visible;
     }
 
-    span.Notification {
+    .Notification {
         visibility: hidden;
         font-size: 0;
+        margin: 0;
     }
 }
