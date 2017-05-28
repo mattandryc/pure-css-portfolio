@@ -1,19 +1,13 @@
 /* Smartphones (portrait) ----------- */
 
-
-h1, h2, h3, p, a, .Notification {
+h1, h2, h3, p, a, span.Notification {
     font-family: 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
     color: whitesmoke;
     margin: .5rem;
 }
 
-.Notification {
-    color: #222;
-    visibility: visible;
-    font-size: 4rem;
-}
-
 a {
+    text-decoration: none;
     -webkit-transition: opacity 500ms linear;
     transition: opacity 500ms linear;
     background-color: transparent;
@@ -46,7 +40,7 @@ body {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -87,26 +81,67 @@ section {
     background-position: right;
 }
 
-section:nth-of-type(1) {
+section:nth-of-type(2) {
     background-image: url("http://ignition.eg2.fr/wp-content/uploads/2016/01/side_view_gare.jpg");
 }
 
-section:nth-of-type(2) {
-    background-color: #7b1fa2;
-
-}
-
-section:nth-of-type(3) {
-    background-image: url("https://source.unsplash.com/ZQeRH1XD4Tc/1024x683");
-
-}
-
 section:nth-of-type(4) {
+    background-image: url("https://source.unsplash.com/ZQeRH1XD4Tc/1024x683");
+}
+
+
+section:nth-of-type(odd) {
     background-color: #7b1fa2;
+
 }
 
 .Header-content {
     margin-top: 2rem;
+}
+
+span.Notification {
+    color: #222;
+    font-size: 4rem;
+    visibility: hidden;
+}
+
+p.Caption  {
+    font-size: 1rem;
+}
+
+p.Caption a  {
+    margin: 0;
+    opacity: .6;
+}
+
+p.Caption a:hover  {
+    opacity: 1;
+}
+
+.Svg {
+    margin-top: 3rem;
+}
+
+.path-1 {
+    stroke-dashoffset: 745;
+    transition: 5s linear;
+}
+
+.path-2 {
+    stroke-dasharray: 260 1000;
+    stroke-dashoffset: 261;
+    transition: 1.2s linear 5.2s;
+}
+
+.path-3 {
+    stroke-dasharray: 100 1000;
+    stroke-dashoffset: 101;
+    transition: 1s linear 6.5s;
+}
+
+.path-4 {
+    stroke-width: 0;
+    transition: 0.1s linear 7.5s;
 }
 
 @media (max-width: 414px) {
@@ -114,9 +149,8 @@ section:nth-of-type(4) {
         visibility: visible;
     }
 
-    .Notification {
+    span.Notification {
         visibility: hidden;
         font-size: 0;
     }
-
 }
